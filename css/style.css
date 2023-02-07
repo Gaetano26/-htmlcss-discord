@@ -255,6 +255,15 @@
     
 }
 
+.container-footer {
+    max-height: 1200px;
+    margin: 0 auto; 
+    
+    
+    
+    
+}
+
 
 /*flex della lista nel footer*/
 .lista2 {
@@ -263,4 +272,12 @@
     justify-content: space-between;
     list-style: none;
     margin-top: 50px;
+    padding-left: 10px;
+    text-align: center;
+    
+}
+
+#h2-list {
+    font-size: 30px;
+    max-width: 250px 
 }
