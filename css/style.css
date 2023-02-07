@@ -15,10 +15,7 @@
     --bg-footer: #23272A;
     --bg-nav: #255EE9;
 
-}
-/*inserimento bordi per avere un layout di tutti gli elementi*/
-.bordi {
-    border: 1px solid black;
+
 }
 
 
@@ -81,11 +78,12 @@
 
 }
 
+/*colore sfondo sezioni 2 e 4*/
 .grey {
     background-color: var(--bg-grey);
 }
 
-
+/*inserimento immagine di sfondo header*/
 .bgr2 {
     background-image: url(../img/jumbo.png);
     background-size: cover;
@@ -136,15 +134,6 @@
 } 
 
 
-
-.brg {
-    background-image: url(../img/jumbo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    ;
-}
-
 /* flex , posizionamento e immagine di sfondo dell'Header*/
 .container2 {
     max-width: 1200px;
@@ -156,6 +145,8 @@
      
 }
 
+
+/*creazione container generale delle sezioni*/
 .container-sezioni {
     max-width: 1200px;
     margin: 0 auto;
@@ -221,17 +212,22 @@
     font-size: 45px;
 }
 
+
+/*modifica dimensione paragrafo sezione 4*/
 .p-sec4 {
    padding-top: 30px;
    padding-right: 130px;
    padding-left: 130px;
 }
 
+/*creazione e posizionamento immagine centrale sezione 4*/
 .img-sec4 {
     padding-top: 10px;
     width: 100%;
 }
 
+
+/*creazione e posizionamento immagine sezione 4 sotto h3*/
 #ready {
     background-image: url(../img/stars.svg);
     background-repeat: no-repeat;
@@ -243,6 +239,7 @@
     
 }
 
+/*creazione e modifiche generali bottone della sezione 4*/
 #btn-mac {
     
     border-radius: 50px 50px;
@@ -255,9 +252,12 @@
     
 }
 
+/*creazione container generale footer*/
 .container-footer {
     max-height: 1200px;
     margin: 0 auto; 
+    background-color: var(--bg-footer);
+    color: var(--bg-nav)
     
     
     
@@ -273,19 +273,65 @@
     list-style: none;
     margin-top: 50px;
     padding-left: 10px;
-    text-align: center;
+    align-content: center;
     
 }
 
+/*modifica child della lista ul*/
+.child {
+    margin: 30px;
+    padding-left:  18px;
+    flex-basis: 15%;
+    text-align: center;
+}
+
+
+
+/*modifica dimensione titolo h2 della lista fel footer*/
 #h2-list {
-    font-size: 30px;
-    max-width: 250px 
+    font-size: 25px;
+    
 }
  
+
+/*rimozione text decoration list style*/
 ul {
     list-style: none;
 }
 
+
+/* modifica colore testo footer + rimozione text decoration*/
 a {
     text-decoration: none;
+    color: #ffffff;
 }
+
+
+/* modifica posizionamento logo footer*/
+
+.logo-footer {
+    margin-left: 2%;
+}
+
+/* creazione linea blue che divide il footer in 2 parti*/
+.bordi {
+    border-top:  1px solid var(--bg-nav);
+ }
+
+
+ /* modifica posizione e grandezza bottone del footer*/
+.btn-footer {
+    margin-right: 3%;
+    background-color: var(--bg-nav);
+    border-radius: 50px 50px;
+    padding: 8px 20px;
+}
+
+/* flex del footer*/
+.section-row-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px;
+    
+ }
